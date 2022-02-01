@@ -1,0 +1,14 @@
+<div class="lists">
+    <div class="active list">
+        <h2>heroes active</h2>
+        <div class="heroes">
+            <span *ngFor="let hero of inactifHeroes; let i = index" [class.active]="i == currentIndex"
+                (click)="setActiveHero(hero, i)">
+                {{ hero.name }}
+            </span>
+        </div>
+        <div *ng for="let hero of this.heroes"></div>
+    </div>
+
+
+</div>
